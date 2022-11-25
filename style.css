@@ -1,0 +1,97 @@
+h1 {
+	color: #9370DB;
+	text-align: center;
+	font-size: 40px;
+}
+
+h2 {
+	color: green;
+	text-align: center;
+}
+
+img {
+	/*width: 100%;*/
+	width: 700px;
+	/*height: 300px;*/
+	border: 5px solid #2f3f2a;
+	border-radius: 30px;
+	margin: 30px 100px 50px 30px;
+	/*padding: 30px;*/
+}
+
+.cat2 {
+	width: 100%;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.block {
+	background: orange;
+	margin: auto;
+	/*padding-left: 30px;*/
+	border: 5px solid gray;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.block>h1 {
+	color: darkblue;
+}
+
+.block>img {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	display: block;
+	margin: auto;
+
+}
+
+h1:hover {
+	color: darkblue;
+}
+
+h1:active {
+	color: green;
+}
+
+.block>img:hover {
+	/*transform: scale(1.2); Увеличение размера больше 1 уменьшение меньше 1*/
+	transition: all 1s ease; /*задержка всех, 1 сек, ease/linear/итд это тип перехода*/
+	transform: rotate(360deg); /*Поворот картинки deg это градусы*/
+	/*transform: translate(200px, 200px); Смещение картинки по оси х и у (х,у)*/
+	/*transform: skew(10deg);Искажение каринки по диагонали*/
+}
+
+.flexbox {
+	background: lightgray;
+	display: flex; /*все объекты в строку*/
+	flex-wrap: wrap; /*Перенос объектов не влезающих на след строку*/
+	justify-content: space-around; /*выравнивание по горизонтали параметры center;space-around; spase-between*/
+	align-items: center; /*вертикальное выравнивание*/
+}
+
+.flexbox_galary>img {
+	width: 300px;
+}
+
+.flexbox_galary {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.flexbox_price {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border: 5px solid #9370DB;
+	padding: 30px;
+}
+.block>img {
+	width: 350px;
+	margin: 20px;
+}
